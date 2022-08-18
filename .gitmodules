@@ -1,0 +1,4 @@
+[submodule "StickerBot"]
+	path = StickerBot
+	url = https://github.com/ZuevaDarya/StickerBot
+	branch = ZuevaDarya-StickerBot-1
