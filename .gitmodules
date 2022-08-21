@@ -1,4 +1,4 @@
 [submodule "StickerBot"]
-	path = src/StickerBot
+	path = src/assets/StickerBot
 	url = https://github.com/ZuevaDarya/StickerBot
 	branch = ZuevaDarya-StickerBot-1
