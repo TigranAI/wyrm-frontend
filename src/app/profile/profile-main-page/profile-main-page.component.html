@@ -1,0 +1,166 @@
+<div class="collection__info">
+  <p class="collection__info-title">Пользователь:<span
+    class="collection__info-title_bold">Yjga125</span></p>
+  <div class="collection__data">
+    <div class="collection__data-column">
+      <p class="collection__text collection__text_yellow collection__info-title_bold">
+        Уровень: <span class="collection__data-num">{{level}} </span><span class="collection__data-symbol">🆙</span>
+      </p>
+      <p class="collection__text  collection__text_yellow collection__info-title_bold">
+        Текущий опыт: <span class="collection__data-num">{{exp}}/{{nextLevelExp}} </span><span
+        class="collection__data-symbol">🧪</span>
+      </p>
+      <p class="collection__text  collection__text_yellow collection__info-title_bold">
+        Всего опыта: <span class="collection__data-num">{{totalExp}} </span><span
+        class="collection__data-symbol">🧪</span>
+      </p>
+    </div>
+
+    <div class="collection__data-column">
+      <p class="collection__data-title">Баланс</p>
+      <p class="collection__text collection__text_blue collection__info-title_bold">
+        Монеты: <span class="collection__data-num">{{coins}} </span><span
+        class="collection__data-symbol">💰</span></p>
+      <p class="collection__text  collection__text_blue collection__info-title_bold">
+        Алмазы: <span class="collection__data-num">{{gems}} </span><span
+        class="collection__data-symbol">💎</span></p>
+
+      <p class="collection__text  collection__text_blue collection__info-title_bold">
+        Конфеты: <span class="collection__data-num">{{candies}} </span><span
+        class="collection__data-symbol">🍬</span></p>
+
+      <div class="collection__block">
+        <p
+          class="collection__text  collection__text_blue collection__info-title_bold">
+          Размер копилки:
+          <span class="collection__data-num">{{piggyBank.coins}} </span>
+          <span class="collection__data-symbol">💰</span>
+          <span class="collection__data-num"> {{piggyBank.candies}} </span>
+          <span class="collection__data-symbol">🍬</span>
+        </p>
+
+        <button class="collection__collect-button">Собрать
+          <span class="collection__data-num">{{coins}}</span>
+          <span class="collection__data-symbol">💰</span>
+          <span class="collection__data-num"> {{candies}}</span>
+          <span class="collection__data-symbol">🍬</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="collection__info">
+  <h3 class="collection__info-title collection__info-title_bold">Ежедневное задание:</h3>
+
+  <table class="collection__list-table">
+    <tr *ngFor="let task of dailyTasks">
+      <td class="collection__list-table-item collection__text collection__text_yellow">{{task.title}}</td>
+      <td><span class="collection__item-progress collection__data-num">({{task.progress}}/{{task.goal}})</span></td>
+    </tr>
+  </table>
+</div>
+
+<div class="collection__info">
+  <div class="collection__block-title">
+    <h3 class="collection__info-title collection__info-title_bold">Задания Новичка:</h3>
+    <p class="collection__text">Пригласил:
+      <span class="collection__info-title_bold"> User00001</span>
+    </p>
+  </div>
+
+  <p class="collection__text collection__check-progress">Прогресс выполнения <span
+    class="collection__item-progress collection__data-num">(<span
+    class="collection__text_yellow">6</span>/12)</span></p>
+
+  <table class="collection__list-table">
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Открыть любой пак
+      </td>
+      <td><span class="collection__progress-img_false"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Собрать прибыль 3 раза
+      </td>
+      <td><span class="collection__progress-img_false"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Купить обычный пак
+      </td>
+      <td><span class="collection__progress-img_true"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Отправить 3-ём друзьям стикер
+      </td>
+      <td><span class="collection__progress-img_false"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Объединить стикеры
+      </td>
+      <td><span class="collection__progress-img_true"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Поучаствовать в раздаче стикера в чате
+      </td>
+      <td><span class="collection__progress-img_true"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Сыграть в рулетку 6 раз
+      </td>
+      <td><span class="collection__progress-img_true"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Выиграть в рулетку 2 раза
+      </td>
+      <td><span class="collection__progress-img_false"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Купить стикер на аукционе
+      </td>
+      <td><span class="collection__progress-img_true"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Выставить стикер на аукцион
+      </td>
+      <td><span class="collection__progress-img_true"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Купить любое количество алмазов
+      </td>
+      <td><span class="collection__progress-img_false"></span></td>
+    </tr>
+    <tr>
+      <td
+        class="collection__list-table-item collection__text collection__text_yellow">
+        Пригласить друга
+      </td>
+      <td><span class="collection__progress-img_false"></span></td>
+    </tr>
+  </table>
+
+  <p class="collection__text collection__text_underline">На выполнение осталось
+    <span class="collection__text_yellow collection__data-num"> 10</span> дней.
+  </p>
+</div>

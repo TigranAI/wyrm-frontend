@@ -1,17 +1,27 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit, ViewEncapsulation} from '@angular/core';
+
+declare function InitSliderCycle() : void;
+declare function InitSpoilers() : void;
+declare function InitPlayers() : void;
 
 @Component({
-  selector: '[home-page]',
+  selector: 'div.main__wrapper[home-page]',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.css']
+  encapsulation: ViewEncapsulation.None
 })
-export class HomePageComponent implements OnInit {
+export class HomePageComponent implements OnInit, AfterViewInit {
 
   sliderPackPreviews: String[] = [];
   welcomeStickers: String[] = [];
   instructions: String[] = [];
 
   constructor() {
+  }
+
+  ngAfterViewInit(): void {
+    InitSliderCycle()
+    InitSpoilers()
+    InitPlayers()
   }
 
   ngOnInit(): void {

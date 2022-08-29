@@ -25,7 +25,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/StickerBot/js/jquery-3.6.0.min.js",
+              "src/assets/StickerBot/js/jquery.cycle.js",
+              "src/assets/StickerBot/js/tgs-player.js",
+              "src/assets/StickerBot/js/script.js"
+            ]
           },
           "configurations": {
             "production": {

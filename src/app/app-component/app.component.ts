@@ -1,9 +1,9 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: '[app-footer]',
-  templateUrl: './footer.component.html',
+  selector: '[app-component]',
+  templateUrl: './app.component.html',
   encapsulation: ViewEncapsulation.None
 })
-export class FooterComponent {
+export class AppComponent {
 }
